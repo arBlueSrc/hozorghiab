@@ -142,19 +142,32 @@ header('Access-Control-Allow-Origin: *');
                 html2canvas(divElement).then(canvas => {
                     // Convert canvas to data URL
                     const imgData = canvas.toDataURL('image/png');
+
+                    // Send image data to the server
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("POST", "../saveImages.php", true);
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.onload = function() {
+                        if (xhr.status === 200) {
+                            alert("Image saved successfully!");
+                        } else {
+                            alert("Error saving image.");
+                        }
+                    };
+                    xhr.send("image=" + encodeURIComponent(imgData));
                     // Add image to zip
-                    zip.file(`${divId}.png`, imgData.split(',')[1], { base64: true }); // Save the image as a base64 string
+                    // zip.file(`${divId}.png`, imgData.split(',')[1], { base64: true }); // Save the image as a base64 string
                 })
             );
         });
 
-        Promise.all(promises).then(() => {
-            // Generate the zip file
-            zip.generateAsync({ type: 'blob' }).then(content => {
-                // Trigger file download
-                saveAs(content, 'divs.zip');
-            });
-        });
+        // Promise.all(promises).then(() => {
+        //     // Generate the zip file
+        //     zip.generateAsync({ type: 'blob' }).then(content => {
+        //         // Trigger file download
+        //         saveAs(content, 'divs.zip');
+        //     });
+        // });
 
     };
 
