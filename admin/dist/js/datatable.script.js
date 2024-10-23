@@ -18,7 +18,7 @@ var editor;
     "use strict";
 var editor;
  $('#example2').DataTable({
-      "pageLength": 300,
+      "pageLength": 600,
     dom: 'Bfrtip',
                 buttons: [
                     'copy', 'csv', 'excel', 'print'
