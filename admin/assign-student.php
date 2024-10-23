@@ -56,7 +56,7 @@ $present_users = array();
 
 foreach ($all_user as $user) {
     $check = false;
-    if ($fetch->existsInArray($user, $present_users_id)) {
+    if ($fetch->existsInArray($user, $present_users)) {
         array_push($present_users, $user);
     } else {
         array_push($absent_user, $user);

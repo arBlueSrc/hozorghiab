@@ -74,7 +74,7 @@ header('Access-Control-Allow-Origin: *');
                 <div class="justify-content-center">
                     <div class="card-qrcode d-flex justify-content-center ">
                         <img id="sourceImage<?php echo $number ?>"  style="display:none;"  crossOrigin="anonymous"
-                             src=<?php echo "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php?code='" . $user["id"]; ?> />
+                             src=<?php echo "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php?code=" . $user["id"]; ?> />
                         <canvas id="canvasImg<?php echo $number ?>"></canvas>
                      </div>
                     <span class="d-flex justify-content-center sp-title-color-2 mt-last-line"  > این کارت را هنگام حضور به همراه داشته
@@ -137,28 +137,36 @@ header('Access-Control-Allow-Origin: *');
         const promises = [];
 
         divIds.forEach(divId => {
-            const divElement = document.getElementById(divId);
-            promises.push(
-                html2canvas(divElement).then(canvas => {
-                    // Convert canvas to data URL
-                    const imgData = canvas.toDataURL('image/png');
 
-                    // Send image data to the server
-                    var xhr = new XMLHttpRequest();
-                    xhr.open("POST", "../saveImages.php", true);
-                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                    xhr.onload = function() {
-                        if (xhr.status === 200) {
-                           // alert("Image saved successfully!");
-                        } else {
-                         //   alert("Error saving image.");
-                        }
-                    };
-                    xhr.send("image=" + encodeURIComponent(imgData));
-                    // Add image to zip
-                    // zip.file(`${divId}.png`, imgData.split(',')[1], { base64: true }); // Save the image as a base64 string
-                })
-            );
+            var delayInMilliseconds = 1000; //1 second
+
+            setTimeout(function() {
+                //your code to be executed after 1 second
+                const divElement = document.getElementById(divId);
+                promises.push(
+                    html2canvas(divElement).then(canvas => {
+                        // Convert canvas to data URL
+                        const imgData = canvas.toDataURL('image/png');
+
+                        // Send image data to the server
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", "../saveImages.php", true);
+                        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                        xhr.onload = function() {
+                            if (xhr.status === 200) {
+                                // alert("Image saved successfully!");
+                            } else {
+                                //   alert("Error saving image.");
+                            }
+                        };
+                        xhr.send("image=" + encodeURIComponent(imgData));
+                        // Add image to zip
+                        // zip.file(`${divId}.png`, imgData.split(',')[1], { base64: true }); // Save the image as a base64 string
+                    })
+                );
+            }, delayInMilliseconds);
+
+
         });
 
         // Promise.all(promises).then(() => {
