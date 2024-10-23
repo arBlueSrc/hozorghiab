@@ -108,7 +108,7 @@
 
     ?>
     <img class="qrcode-img"
-         src=<?php echo "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php?code='" . $user["id"]; ?> />
+         src=<?php echo "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php?code=" . $user["id"]; ?> />
 </div>
 
 

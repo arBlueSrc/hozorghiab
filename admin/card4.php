@@ -43,7 +43,7 @@ $user = $users[0];
         <div class="justify-content-center">
             <div class="card-qrcode d-flex justify-content-center ">
                 <img
-                        src=<?php echo "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php?code='" . $user["id"]; ?>/>
+                        src=<?php echo "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php?code=" . $user["id"]; ?>/>
             </div>
             <span class="d-flex justify-content-center sp-title-color-2 mt-last-line"  > این کارت را هنگام حضور به همراه داشته
                     باشید</span>
