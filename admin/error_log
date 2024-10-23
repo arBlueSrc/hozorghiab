@@ -1,0 +1,18 @@
+[25-Nov-2021 11:55:33 Asia/Tehran] PHP Fatal error:  Call to a member function WeeklyPrediction() on null in /home/smsoffice/public_html/alasrar/admin/weekly_list_post.php on line 92
+[25-Nov-2021 13:23:32 Asia/Tehran] PHP Parse error:  syntax error, unexpected '$row0' (T_VARIABLE) in /home/smsoffice/public_html/alasrar/admin/handle_menu.php on line 76
+[25-Nov-2021 13:23:46 Asia/Tehran] PHP Parse error:  syntax error, unexpected '$row0' (T_VARIABLE) in /home/smsoffice/public_html/alasrar/admin/handle_menu.php on line 76
+[25-Nov-2021 13:23:58 Asia/Tehran] PHP Parse error:  syntax error, unexpected '$row0' (T_VARIABLE) in /home/smsoffice/public_html/alasrar/admin/handle_menu.php on line 76
+[25-Nov-2021 14:30:11 Asia/Tehran] PHP Fatal error:  Call to a member function HandleMenu() on null in /home/smsoffice/public_html/alasrar/admin/handle_menu.php on line 75
+[28-Nov-2021 09:46:39 Asia/Tehran] PHP Fatal error:  Call to a member function HeadBookOnsor() on null in /home/smsoffice/public_html/alasrar/admin/sarketab_onsor_list_post.php on line 94
+[28-Nov-2021 09:51:05 Asia/Tehran] PHP Fatal error:  Call to a member function HeadBookOnsor() on null in /home/smsoffice/public_html/alasrar/admin/sarketab_onsor_list_post.php on line 94
+[28-Nov-2021 10:30:54 Asia/Tehran] PHP Fatal error:  Call to a member function HeadBookMonth() on null in /home/smsoffice/public_html/alasrar/admin/sarketab_month_list_post.php on line 86
+[28-Nov-2021 12:05:24 Asia/Tehran] PHP Fatal error:  Call to a member function HeadBookOnsor() on null in /home/smsoffice/public_html/alasrar/admin/sarketab_onsor_list_post.php on line 95
+[28-Nov-2021 13:22:02 Asia/Tehran] PHP Fatal error:  Call to a member function HeadBook() on null in /home/smsoffice/public_html/alasrar/admin/sarketab_list_post.php on line 85
+[28-Nov-2021 14:13:50 Asia/Tehran] PHP Fatal error:  Call to a member function HeadBookOnsor() on null in /home/smsoffice/public_html/alasrar/admin/sarketab_onsor_list_post.php on line 96
+[28-Nov-2021 16:03:36 Asia/Tehran] PHP Fatal error:  Call to a member function HandleMenu() on null in /home/smsoffice/public_html/alasrar/admin/handle_menu.php on line 75
+[02-Dec-2021 14:20:05 Asia/Tehran] PHP Fatal error:  Call to a member function HeadBookOnsor() on null in /home/smsoffice/public_html/alasrar/admin/sarketab_onsor_list_post.php on line 96
+[04-Dec-2021 11:40:55 Asia/Tehran] PHP Fatal error:  Call to a member function HeadBookOnsor() on null in /home/smsoffice/public_html/alasrar/admin/sarketab_onsor_list_post.php on line 96
+[09-Dec-2021 08:30:32 Asia/Tehran] PHP Fatal error:  Call to a member function Tiket() on null in /home/smsoffice/public_html/alasrar/admin/app-mail.php on line 94
+[12-Dec-2021 12:01:03 Asia/Tehran] PHP Fatal error:  Call to a member function ForceUpdate() on null in /home/smsoffice/public_html/alasrar/admin/force_update.php on line 76
+[13-Dec-2021 16:22:58 Asia/Tehran] PHP Fatal error:  Call to a member function User() on null in /home/smsoffice/public_html/sarketab/admin/users-list.php on line 77
+[14-Dec-2021 07:41:49 Asia/Tehran] PHP Fatal error:  Call to a member function Purchase() on null in /home/smsoffice/public_html/alasrar/admin/purchase_list.php on line 85

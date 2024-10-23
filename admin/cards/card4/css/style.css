@@ -1,0 +1,226 @@
+@import url(fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+body {
+    font-family: IRANSansX !important;
+    direction: rtl;
+    background-color: #fff;
+    margin: 0;
+    width: 100%;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+
+
+.direction-ltr {
+    direction: ltr !important;
+}
+
+
+h1, h2, h3, h4, h5, h6, input, textarea {
+    font-family: IRANSansX !important;
+}
+
+p {
+    line-height: 1.7 !important;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-small {
+    font-size: 0.8em;
+}
+
+.text-xsmall {
+    font-size: 0.6em;
+}
+
+.text-large {
+    font-size: 1.2em;
+}
+
+.text-xlarge {
+    font-size: 1.4em;
+}
+
+.text-xxlarge {
+    font-size: 1.6em;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.text-UltraLight {
+    font-weight: 200;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-medium {
+    font-weight: 500;
+}
+
+.text-demibold {
+    font-weight: 600;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-extrabold {
+    font-weight: 800;
+}
+
+.text-black {
+    font-weight: 900;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-shadow {
+    text-shadow: 2px 1px 11px rgba(0, 0, 0, 0.61);
+}
+
+.text-color-white {
+    color: #FFFFFF;
+}
+
+.sp-mt-1 {
+    margin-top: 10% !important;
+}
+
+.sp-mt-2 {
+    margin-top: 25% !important;
+}
+
+
+.sp-title-color-2 {
+    color: #c5c5c5;
+}
+
+
+.card-profile {
+    top: 0;
+    width: 32%;
+    height: 33%;
+    border-radius: 30px;
+    z-index: 2;
+}
+
+.profile-img, qr-img {
+    object-fit: cover;
+}
+
+.img-border {
+    margin: 10px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px 0px #00000033;
+}
+
+.a4 {
+    width: 620px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    background-image: url("../img/img4.jpg");
+    object-fit: fill;
+    padding: 6%;
+}
+
+.sp-box-1 {
+    background-color: #25277a;
+    border-radius: 35px;
+    max-width: fit-content;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: 22px;
+}
+
+.sp-box-2 {
+    background-color: #000000;
+    height: 30px;
+    text-align: center;
+}
+
+.sp-card {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.img-border-2 {
+    border: 4px solid #25277a;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px 0px #000000c2;
+}
+
+.card-qrcode {
+    width: 30%;
+    height: 20%;
+    background-color: #FFFFFF;
+    margin-top: -142px;
+    margin-right: -22px;
+}
+
+.mt-last-line {
+    margin-top: 63px;
+}
+
+.name{
+    margin-top: -58px;
+    margin-right: 143px;
+}
+
+.city{
+    margin-top: -79px;
+    margin-right: 207px;
+    font-size: 19px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 995px) {
+
+}

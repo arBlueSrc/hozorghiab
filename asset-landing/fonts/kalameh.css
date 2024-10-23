@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Kalameh;
+    src: url('./kalameh/Kalameh-Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: Kalameh;
+    src: url('./kalameh/Kalameh-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: Kalameh;
+    src: url('./kalameh/Kalameh-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: Kalameh;
+    src: url('./kalameh/Kalameh-Medium.ttf') format('truetype');
+
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: Kalameh;
+    src: url('./kalameh/Kalameh-Thin.ttf') format('truetype');
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: Kalameh;
+    src: url('./kalameh/Kalameh-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: Kalameh;
+    src: url('./kalameh/Kalameh-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+  }
+  @font-face {
+    font-family: Kalameh;
+    src: url('./kalameh/Kalameh-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: Kalameh;
+    src: url('./kalameh/Kalameh-Black.ttf') format('truetype');
+    font-weight: 900;
+  }
+  

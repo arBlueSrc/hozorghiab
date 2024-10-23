@@ -1,0 +1,576 @@
+body {
+    text-align: right;
+    box-sizing: border-box;
+    /* height: 500px; */
+    font-family: "Shabnam";
+    position: relative;
+}
+
+.container {}
+
+.my-wrapper {
+    /* height: 500px; */
+}
+
+header {
+    background-image: url("../images/Group237-crop.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    /* background-position: center; */
+    background-position: top;
+    background-size: auto;
+    background-origin: border-box;
+    box-sizing: border-box;
+
+    padding-bottom: 2rem;
+    background-color: #004A9C;
+
+}
+
+.header {
+    /* height: 765px; */
+}
+
+.navbar-nav {
+    font-family: 'Shabnam';
+}
+
+.nav-item .nav-link {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+.site-title {
+    /* margin-top: 11rem; */
+
+    /* margin-right: -5rem; */
+    margin-top: 7rem;
+    margin-right: 1rem;
+}
+
+.site-title h1 {
+    font-size: 4rem;
+}
+
+.under-title {
+    font-size: 1.4rem;
+}
+
+.header-btns button {
+    /* width: 50%; */
+    min-width: 283px;
+    padding: 0.6rem 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 300;
+    border-radius: 20px;
+
+}
+
+button i {
+    font-size: 2rem;
+}
+
+.header-btns {
+    /* margin-right: -12rem; */
+    margin-top: 7rem;
+}
+
+.btn-red {
+    background-color: #E31C37;
+    color: #FFFFFF;
+}
+
+.btn-red:hover {
+    /* background-color: #FFFFFF;
+    color: #E31C37; */
+}
+
+.btn-red.my-disabled:hover {
+    background-color: #E31C37;
+    color: #FFFFFF;
+}
+
+.btn-green {
+
+    background-color: #1CE392;
+    color: #FFFFFF;
+}
+
+.btn-green:hover {
+
+    background-color: #FFFFFF;
+    color: #1CE392;
+}
+
+.btn-header-2 {
+    /* margin-right: -9.5rem; */
+}
+
+.header-img {
+    margin-right: -10rem;
+    margin-top: 2rem;
+    /* opacity: .8; */
+}
+
+.my-circle {
+    background-color: #FFFFFF;
+}
+
+/* 
+.header{
+    height: 595px;
+}
+.header-btns{
+    margin-right: 0;
+} */
+
+
+
+/* ******************
+content
+*********************/
+
+.download-section {
+    /* background-color: #FFFFFF; */
+}
+
+.content-wrapper h3 {
+    font-size: 5rem;
+    padding: 2rem 0 5rem;
+}
+
+.dl-links {
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.dl-links a {
+    color: #004A9C;
+}
+
+.dl-explain {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+}
+
+.content-wrapper {
+    box-sizing: border-box;
+    background-image: url("../images/Path694.png");
+    background-repeat: no-repeat;
+    /* height: 100%; */
+    background-position: 24rem top;
+    /* background-size:cover ; */
+    background-origin: border-box;
+    /* box-sizing: border-box; */
+}
+
+.right-border {
+    /* border-right: 1px solid #004A9C; */
+}
+
+.my-container {
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+
+    /* padding-right: 15px;
+    padding-left: 15px; */
+
+}
+
+.dl-images {
+    /* padding: 0 12rem; */
+}
+
+.dl-images img {
+    min-width: 160px;
+}
+
+.about-app-text {
+    box-sizing: border-box;
+    padding-top: 6rem;
+}
+
+.about-app-text p {
+    font-size: 1.2rem;
+}
+
+section.app-about {
+    /* overflow: hidden; */
+    overflow-x: clip;
+    position: relative;
+}
+
+.left-image {
+    /* margin-top: -7rem; */
+    position: static;
+
+}
+
+.left-image img {
+    /* position: absolute;
+    top: 95px;
+    left: -67px; */
+}
+
+.right-image {
+    position: static;
+    direction: ltr;
+}
+
+.right-image img {
+    /* position: absolute;
+    top: 113px;
+    right: 0px; */
+}
+
+section.app-features {
+    margin-top: 8rem;
+    position: relative;
+    overflow-x: clip;
+}
+
+.app-features-text {
+    /* padding-right: 6rem; */
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    padding-top: 6rem;
+}
+
+.our-customers {
+    margin-top: 14rem;
+    text-align: center;
+    background-color: #909294;
+    padding: 6rem 0;
+}
+
+.our-customers h3 {
+    color: #004A9C;
+}
+
+.half-circle-img {
+    position: absolute;
+    left: -298px;
+    bottom: -218px;
+}
+
+.faq-sec {
+    text-align: center;
+}
+
+.cards-wrapper {
+    margin-right: 2rem;
+}
+
+.custom-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 22px;
+    border-radius: 0;
+    margin-bottom: 2rem;
+}
+
+h5.card-title {
+    font-size: 2.4rem;
+}
+
+.my-card-header span {
+    align-self: end;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    color: #C0C0C0;
+    font-size: 1.2rem;
+}
+
+.custom-card p {
+    color: #727272;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+.card-body {
+    padding-right: 8rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.custom-card-footer {
+    background-color: #FFFFFF;
+}
+
+.custom-card-footer a {
+    display: inline-block;
+    padding: 0 0 1rem 1rem;
+    color: #727272;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+footer {
+    /* height: 300px; */
+    background-image: url("../images/Group212.png");
+    background-repeat: no-repeat;
+    background-position: 0rem -2rem;
+    /* height: 100%; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-origin: border-box;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    background-color: #004A9C;
+}
+
+.footer-contact-us ul {
+    list-style: none;
+}
+
+.my-contact-icons {
+    color: black;
+    background-color: #FFF;
+    border-radius: 50%;
+    padding: .4rem;
+    margin-left: 0.3rem;
+}
+
+.my-address {
+    padding-right: 6rem;
+    padding-top: 2rem;
+}
+
+.footer-right {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.footer-logo-wrapper {
+    padding: 0 8rem;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+.content-wrapper::after {
+    content: "";
+    border-right: 1px solid #004A9C;
+    /* left: 1rem; */
+    right: 18rem;
+    width: 10px;
+    top: 1px;
+    bottom: 5px;
+    /* height: 10px; */
+    position: absolute;
+    z-index: -1;
+}
+
+.download-section,
+.app-about,
+.app-features,
+.our-customers {
+    /* height: 100vh; */
+}
+
+.navbar button.navbar-toggler {
+    /* border-color:#FFFFFF; */
+    border: 2px solid #FFF;
+}
+
+.navbar button.navbar-toggler i {
+    color: #FFFFFF;
+}
+
+.navbar-collapse {
+    padding-top: 1rem;
+}
+
+.green-btns-container {
+    display: flex;
+    width: 100%;
+}
+
+.green-btns-container button:last-child {
+    margin-right: 1rem;
+}
+
+.red-btn-container {
+    width: 100%;
+}
+
+.our-customers img {
+    width: 100%;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden
+}
+
+div.footer-logo {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+
+
+
+@media(max-width:1200px) {
+    .header-img {
+        display: none;
+    }
+
+    .header-btns {
+        margin-right: 0;
+    }
+
+    .site-title {
+        margin-right: 0;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .navbar-collapse .nav-item .nav-link {
+        color: #FFFFFF;
+    }
+
+    .red-btn-container button {
+        margin: 0 auto;
+    }
+
+    .green-btns-container {
+        justify-content: center;
+    }
+
+    .footer-logo-wrapper {
+        padding: 0;
+    }
+
+    .customers-images {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width:992px) {
+    .btn-header-2 {
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:576px) {
+
+    .green-btns-container {
+        width: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .green-btns-container button:last-child {
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    .dl-images img {
+        max-width: 250px;
+    }
+
+    .dl-images img:last-child {
+        margin-top: 1rem;
+    }
+
+}
+
+@media (max-width:576px) {
+    .header-btns button {
+        min-width: 165px;
+        font-size: 1rem;
+    }
+
+    .custom-card .card-body {
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+    }
+
+    .custom-card .card-body p {
+        font-size: 1rem;
+    }
+
+    .cards-wrapper {
+        margin-right: 0;
+    }
+
+    .my-container>h3 {
+        font-size: 3rem;
+    }
+
+    .site-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .under-title {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    .first-ul {
+        padding-right: 0;
+    }
+
+    .my-address {
+        padding-right: 3.6rem;
+        ;
+    }
+
+    .app-features-text {
+        font-size: 1.2rem;
+        padding-top: 0;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    .first-ul ul {
+        margin-top: .5rem;
+    }
+
+    .dl-links {
+        font-size: 1.5rem;
+
+    }
+
+    .dl-links a:first-child {
+        margin-bottom: 2rem;
+    }
+
+    .second-ul li:first-child {
+        margin-bottom: .5rem;
+    }
+    .about-app-text {
+        padding-top: 0;
+    }
+    .dl-explain {
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width:1440px) {
+    .left-image img {
+        left: -390px;
+    }
+
+
+}
+
+@media (max-width:1880px) {
+    .content-wrapper::after {
+        display: none;
+    }
+}

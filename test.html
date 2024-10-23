@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Image to JPG</title>
+</head>
+<body>
+<h1>Convert Image to JPG</h1>
+<img id="sourceImage" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php" crossOrigin="anonymous" style="display:none;">
+<canvas id="canvas"></canvas>
+<button id="convertButton">Convert to JPG</button>
+<a id="downloadLink" style="display: none;">Download JPG</a>
+
+<script>
+    document.getElementById('convertButton').addEventListener('click', function() {
+        // Get the image element
+        const img = document.getElementById('sourceImage');
+
+        // Create a canvas and set its size
+        const canvas = document.getElementById('canvas');
+        canvas.width = img.width;
+        canvas.height = img.height;
+
+        // Draw the image onto the canvas
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+
+        // Convert canvas to JPG
+        const jpgDataUrl = canvas.toDataURL('image/jpeg');
+
+        // Display download link
+        const downloadLink = document.getElementById('downloadLink');
+        downloadLink.href = jpgDataUrl;
+        downloadLink.download = 'converted-image.jpg';
+        downloadLink.style.display = 'block';
+        downloadLink.textContent = 'Download JPG';
+    });
+</script>
+</body>
+</html>

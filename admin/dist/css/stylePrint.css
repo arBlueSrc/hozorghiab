@@ -1,0 +1,643 @@
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/woff2/IRANSansWeb_Medium.woff2) format('woff'),
+    url(../font/woff2/IRANSansWeb_Medium.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: IRANSansXBold;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/woff2/IRANSansWeb_Bold.woff2) format('woff'),
+    url(../font/woff2/IRANSansWeb_Bold.woff2) format('woff2')
+}
+
+body {
+    color: #535353;
+    font-family: IRANSansX !important;
+    overflow-x: hidden
+}
+
+h1 {
+    font-weight: 700
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto
+}
+
+.ltr {
+    direction: ltr
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-small {
+    font-size: .8em
+}
+
+.text-xsmall {
+    font-size: .6em
+}
+
+.text-large {
+    font-size: 1.2em
+}
+
+.text-xlarge {
+    font-size: 1.4em
+}
+
+.text-xxlarge {
+    font-size: 1.6em
+}
+
+.text-underline {
+    text-decoration: underline
+}
+
+.text-thin {
+    font-weight: 100
+}
+
+.text-UltraLight {
+    font-weight: 200
+}
+
+.text-light {
+    font-weight: 300
+}
+
+.text-regular {
+    font-weight: 400
+}
+
+.text-medium {
+    font-weight: 500
+}
+
+.text-demibold {
+    font-weight: 600
+}
+
+.text-bold {
+    font-weight: 700
+}
+
+.text-extrabold {
+    font-weight: 800
+}
+
+.text-black {
+    font-weight: 900
+}
+
+.text-justify {
+    text-align: justify
+}
+
+.img-fluid {
+    max-width: 100% !important;
+    height: auto
+}
+
+.form-control:focus {
+    box-shadow: none
+}
+
+.blod {
+    font-family: IRANSansXBold !important
+}
+
+.mywidth {
+    width: 50%
+}
+
+@media (max-width: 992px) {
+    .mywidth {
+        width: 100%
+    }
+}
+
+.myform .login-inner-form {
+    color: #ccc;
+    position: relative
+}
+
+.myform .bg-color-10 {
+    min-height: 100vh;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px
+}
+
+.myform h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: IRANSansX !important
+}
+
+.myform .form-section {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: all .5s;
+    transition: all .9s;
+    z-index: 1
+}
+
+.myform .form-box {
+    width: 100%;
+    text-align: center
+}
+
+.myform .login-inner-form .form-group {
+    margin-bottom: 20px
+}
+
+.myform .login-inner-form .form-box {
+    float: left;
+    width: 100%;
+    position: relative
+}
+
+.myform .login-inner-form .input-text {
+    font-size: 16px;
+    outline: none;
+    color: #616161;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #bdbdbd
+}
+
+.custom-file {
+    border-bottom: 1px solid #bdbdbd
+}
+
+.custom-file-label {
+    position: absolute;
+    left: 0;
+    background: red;
+    line-height: 2;
+    padding: 5px 10px
+}
+
+.myform .login-inner-form img {
+    margin-bottom: 5px;
+    height: 40px
+}
+
+.myform .login-inner-form .form-box input {
+    float: right;
+    width: 100%;
+    padding: 10px 35px 7px 20px;
+    text-align: right
+}
+
+.myform .login-inner-form .form-box select {
+    float: right;
+    width: 100%;
+    padding: 10px 35px 7px 20px;
+    text-align: right;
+    direction: rtl
+}
+
+.myform .login-inner-form .form-box i {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 20px;
+    color: #616161
+}
+
+.myform .login-inner-form label {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px
+}
+
+.myform .login-inner-form .forgot {
+    margin: 0;
+    line-height: 45px;
+    color: #535353;
+    font-size: 15px;
+    float: right
+}
+
+.bg-img {
+    background: rgba(138, 16, 1) url(../img/logo-roydad.png) no-repeat;
+    background-position: top 19% center;
+    background-size: 50%;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    opacity: 1;
+    z-index: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px
+}
+
+input[type=file]::before {
+    content: "Attach Your CV: ";
+    color: #000;
+    margin-right: 10px
+}
+
+.myform .info {
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 999
+}
+
+.myform .info span {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    display: block
+}
+
+.myform .info h1 span {
+    font-weight: 300
+}
+
+.myform .info {
+    text-align: left
+}
+
+.myform .info p {
+    margin-bottom: 0;
+    color: #fff;
+    opacity: .9;
+    line-height: 28px
+}
+
+.myform .login-inner-form .btn-md {
+    cursor: pointer;
+    height: auto;
+    color: #fff;
+    padding: 15.5px 50px 14.5px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 50px;
+    text-transform: uppercase
+}
+
+.myform .login-inner-form input[type=checkbox],
+input[type=radio] {
+    margin-right: 3px
+}
+
+.myform .login-inner-form p {
+    margin: 0;
+    color: #616161
+}
+
+.myform .login-inner-form p a {
+    color: #616161
+}
+
+.myform .login-inner-form button:focus {
+    outline: none;
+    outline: 0 auto -webkit-focus-ring-color
+}
+
+.myform .login-inner-form .btn-theme.focus,
+.btn-theme:focus {
+    box-shadow: none
+}
+
+.myform .login-inner-form .btn-theme {
+    background: #8a1001;
+    border: none;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2)
+}
+
+.myform .login-inner-form .btn-theme:hover {
+    background: #6f0d01
+}
+
+.myform .logo {
+    position: absolute;
+    top: 0;
+    left: 5%
+}
+
+.myform .logo img {
+    height: 90px;
+    width: 115px;
+    margin-bottom: 15px
+}
+
+.myform .logo-btn {
+    position: absolute;
+    bottom: 0;
+    right: -5%
+}
+
+.myform .logo-btn img {
+    height: 90px;
+    width: 115px;
+    transform: rotate(180deg)
+}
+
+.myform .nav-pills li {
+    display: inline-block
+}
+
+.myform .login-inner-form .checkbox {
+    margin-bottom: 25px;
+    font-size: 14px
+}
+
+.myform .login-inner-form .form-check {
+    float: left;
+    margin-bottom: 0
+}
+
+.myform .login-inner-form .form-check a {
+    color: #d6d6d6;
+    float: right
+}
+
+.myform .login-inner-form .form-check-input {
+    position: absolute;
+    margin-left: 0
+}
+
+.myform .login-inner-form .form-check label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    margin-left: -25px;
+    border: none;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2)
+}
+
+.myform .login-inner-form .form-check-label {
+    padding-left: 25px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #616161
+}
+
+.myform .login-inner-form .checkbox-theme input[type=checkbox]:checked + label::before {
+    color: #fff;
+    background: #0f96f9
+}
+
+.myform .login-inner-form input[type=checkbox]:checked + label:before {
+    font-weight: 300;
+    color: #f3f3f3;
+    font-size: 14px;
+    content: "\2713";
+    line-height: 17px
+}
+
+.myform .login-inner-form input[type=checkbox],
+input[type=radio] {
+    margin-top: 4px
+}
+
+.myform .login-inner-form .checkbox a {
+    font-size: 16px;
+    color: #616161;
+    float: right;
+    margin-left: 3px
+}
+
+.myform .form-section h3 {
+    font-size: 23px;
+    font-weight: 500;
+    color: #313131
+}
+
+.myform .form-section p {
+    margin: 25px 0 0;
+    font-size: 16px;
+    color: #616161
+}
+
+.myform .form-section p a {
+    color: #0f96f9
+}
+
+.myform .form-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.myform .form-section .social-list li {
+    display: inline-block;
+    margin-bottom: 5px
+}
+
+.myform .form-section .social-list li a {
+    font-size: 13px;
+    font-weight: 600;
+    width: 120px;
+    margin: 2px 0 3px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2)
+}
+
+.myform .form-section .social-list li a i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    float: left;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+    font-size: 15px
+}
+
+.myform .form-section:hover .social-list li a i {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+}
+
+.myform .form-section .social-list li a span {
+    margin-right: 7px
+}
+
+.myform .form-section .extra-login {
+    width: 100%;
+    margin: 0 0 5px;
+    text-align: center;
+    position: relative
+}
+
+.myform .form-section .extra-login::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    height: 1px;
+    background: #d8dcdc;
+    content: ""
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: IRANSansX !important
+}
+
+.myform .form-section .extra-login > span {
+    width: auto;
+    float: none;
+    display: inline-block;
+    background: #fff;
+    padding: 1px 20px;
+    z-index: 1;
+    position: relative;
+    font-size: 13px;
+    color: #616161;
+    text-transform: capitalize
+}
+
+.myform .facebook-i {
+    background: #4867aa;
+    color: #fff
+}
+
+.myform .twitter-i {
+    background: #3cf;
+    color: #fff
+}
+
+.myform .google-i {
+    background: #db4437;
+    color: #fff
+}
+
+.myform .facebook-color {
+    color: #4867aa
+}
+
+.myform .twitter-color {
+    color: #3cf
+}
+
+.myform .google-color {
+    color: #db4437
+}
+
+.main {
+    color: #fff
+}
+
+.sp-box-1 {
+    overflow: hidden;
+    display: inline-block !important;
+    position: relative;
+    width: 450px;
+    background: #19408f
+}
+
+.logo-1 {
+    width: 100px
+}
+
+.logo-2 {
+    position: absolute;
+    bottom: 0
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px
+}
+
+.qrcode-box {
+    background: #fff;
+    /*! width:180px; */
+    border-radius: 20px
+}
+
+.qrcode-img {
+    width: 180px;
+    padding: 10px
+}
+
+.sp-margin-1 {
+    margin-left: 362px;
+    height: 320px
+}
+
+.sp-margin-2 {
+    margin-left: -89px;
+    height: 320px;
+
+}
+
+@media (max-width: 1200px) {
+    .myform .info h1 {
+        font-size: 45px
+    }
+}
+
+@media (max-width: 992px) {
+    .myform .none-992 {
+        display: none
+    }
+}
