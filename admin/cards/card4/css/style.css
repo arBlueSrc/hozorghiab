@@ -155,7 +155,7 @@ h1 {
 
 .a4 {
     width: 620px;
-    height: 350px;
+    height: 401px;
     overflow: hidden;
     position: relative;
     background-size: 100% 100%;
@@ -214,8 +214,6 @@ h1 {
     margin-right: 207px;
     font-size: 19px;
 }
-
-
 
 @media screen and (max-width: 800px) {
 
