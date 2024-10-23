@@ -2,7 +2,7 @@
     "use strict";
 var editor;
  $('#example').DataTable({
-      "pageLength": 300,
+      "pageLength": 600,
     dom: 'Bfrtip',
                 buttons: [
                     'copy', 'csv', 'excel', 'print'

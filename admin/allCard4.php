@@ -74,7 +74,7 @@ header('Access-Control-Allow-Origin: *');
                 <div class="justify-content-center">
                     <div class="card-qrcode d-flex justify-content-center ">
                         <img id="sourceImage<?php echo $number ?>"  style="display:none;"  crossOrigin="anonymous"
-                             src=<?php echo "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php?code=" . $user["id"]; ?> />
+                             src=<?php echo "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php?code=" . $user["id"] . "'"; ?> />
                         <canvas id="canvasImg<?php echo $number ?>"></canvas>
                      </div>
                     <span class="d-flex justify-content-center sp-title-color-2 mt-last-line"  > این کارت را هنگام حضور به همراه داشته
@@ -187,9 +187,10 @@ header('Access-Control-Allow-Origin: *');
             imgIds.push(((i).toString()));
         }
         imgIds.forEach(imgIds => {
-            document.getElementById('sourceImage'+imgIds).onload = function() {
-                // Get the image element
 
+            document.getElementById('sourceImage'+imgIds).onload = function() {
+
+                // Get the image element
                 const img = document.getElementById('sourceImage'+imgIds);
 
                 // Create a canvas and set its size
@@ -203,11 +204,10 @@ header('Access-Control-Allow-Origin: *');
 
                 // Convert canvas to JPG
                 const jpgDataUrl = canvas.toDataURL('image/jpeg');
+
             };
         });
     });
-
-
 
 </script>
 

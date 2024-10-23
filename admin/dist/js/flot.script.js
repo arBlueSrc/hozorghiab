@@ -117,7 +117,7 @@
 
     ///////////////////////////// Real Time Chart /////////////////////
     var data = [],
-            totalPoints = 300;
+            totalPoints = 600;
 
     function getRandomData() {
 
