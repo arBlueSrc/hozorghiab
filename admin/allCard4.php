@@ -149,9 +149,9 @@ header('Access-Control-Allow-Origin: *');
                     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                     xhr.onload = function() {
                         if (xhr.status === 200) {
-                            alert("Image saved successfully!");
+                           // alert("Image saved successfully!");
                         } else {
-                            alert("Error saving image.");
+                         //   alert("Error saving image.");
                         }
                     };
                     xhr.send("image=" + encodeURIComponent(imgData));
