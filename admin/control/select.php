@@ -767,7 +767,7 @@ class Select extends DataBase //برای ارث بری استفاده می شو�
 	{
 		parent::__construct();
 
-		$sql = "SELECT students.id, students.name, students.family, students.national_code FROM `present_list`
+		$sql = "SELECT students.id, students.name, students.family, students.national_code, students.city FROM `present_list`
 			INNER JOIN students ON students.id = present_list.student_id
 			WHERE class_id='" . $class_id . "'";
 		$r = $this->_DB->prepare($sql);

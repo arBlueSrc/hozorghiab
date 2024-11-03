@@ -93,6 +93,7 @@
                                             <th>شناسه</th>
                                             <th>نام و نام خانوادگی</th>
                                             <th>کدملی</th>
+                                            <th>شهر</th>
                                             <th>غیبت دستی</th>
                                         </tr>
                                     </thead>
@@ -102,6 +103,7 @@
                                                 <td><?php echo $row['id']; ?></td>
                                                 <td><?php echo $enc->dec($row['name']) . " " . $enc->dec($row['family']); ?></td>
                                                 <td><?php echo $enc->dec($row['national_code']); ?></td>
+                                                <td><?php echo $enc->dec($row['city']); ?></td>
                                                 <td><a href="control/hozor/delete.php?del-present=<?php echo $row['id']; ?>&class-id=<?php echo $_POST['class-id']; ?>" style="color: #DC0003"><i class="mdi h5 mr-2 mdi-bi bi-person-x-fill" onclick="return confirm('آیا از ثبت غیبت این فراگیر مطمئن هستید ؟');"></i></a></td>
                                             </tr>
                                         <?php } ?>
@@ -136,6 +138,7 @@
                                             <th>شناسه</th>
                                             <th>نام و نام خانوادگی</th>
                                             <th>کدملی</th>
+                                            <th>شهر</th>
                                             <th>حضور دستی</th>
                                         </tr>
                                     </thead>
@@ -145,6 +148,7 @@
                                                 <td><?php echo $row['id']; ?></td>
                                                 <td><?php echo $enc->dec($row['name']) . " " . $enc->dec($row['family']); ?></td>
                                                 <td><?php echo $enc->dec($row['national_code']); ?></td>
+                                                <td><?php echo $enc->dec($row['city']); ?></td>
                                                 <td>
                                                     <form method="post" action="control/hozor/insert.php" enctype="multipart/form-data">
                                                         <input type="hidden" id="student-id" name="student-id" value="<?php echo $row['id']; ?>" />

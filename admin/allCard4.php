@@ -22,6 +22,8 @@ header('Access-Control-Allow-Origin: *');
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@latest/dist/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 
 </head>
 
@@ -43,10 +45,12 @@ $size = sizeof($students);
 
 $number = 1;
 
+$userIdArray = [];
 
 foreach ($students as $row) {
     $users = $fetch->oneUser($row['student']);
     $user = $users[0];
+    array_push($userIdArray,  $user["id"] );
     ?>
 
 
@@ -73,9 +77,7 @@ foreach ($students as $row) {
 
             <div class="justify-content-center">
                 <div class="card-qrcode d-flex justify-content-center ">
-                    <img id="sourceImage<?php echo $number ?>" style="display:none;" crossOrigin="anonymous"
-                         src=<?php echo "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hozor.nasraa.ir/api/checkUser.php?code=" . $user["id"] . "'"; ?>/>
-                    <canvas id="canvasImg<?php echo $number ?>"></canvas>
+                    <div id="qrcode<?php echo $number ?>"></div>
                 </div>
                 <span class="d-flex justify-content-center sp-title-color-2 mt-last-line"> این کارت را هنگام حضور به همراه داشته
                     باشید</span>
@@ -103,8 +105,7 @@ foreach ($students as $row) {
     function downloadImages(divId, size) {
         //your code to be executed after 1 second
         const divElement = document.getElementById('canvas'+divId);
-        console.log(divId);
-        html2canvas(divElement).then(canvas => {
+         html2canvas(divElement).then(canvas => {
             // Convert canvas to data URL
             const imgData = canvas.toDataURL('image/png');
 
@@ -115,11 +116,13 @@ foreach ($students as $row) {
             xhr.onload = function () {
                 if (xhr.status === 200) {
                     // alert("Image saved successfully!");
+                    console.log(divId + " ok")
                     if (divId <= size){
                         downloadImages(divId+1, size)
                     }
                 } else {
                     //   alert("Error saving image.");
+                    console.log(divId + " false")
                 }
             };
             xhr.send("image=" + encodeURIComponent(imgData));
@@ -129,35 +132,27 @@ foreach ($students as $row) {
     }
 
     $(document).ready(function () {
-        // Your code to run since DOM is loaded and ready
-        const imgIds = [];
-        var size = <?php echo json_encode($size); ?>//;
-        for (let i = 1; i <= size; i++) {
-            imgIds.push((i).toString());
-        }
+
+        var jsArray = <?php echo json_encode($userIdArray); ?>;
+        var number = 1;
+
+        jsArray.forEach(userIds => {
+
+            console.log(userIds)
 
 
-        imgIds.forEach(imgIds => {
+            var qrcodeData = "https://hozor.nasraa.ir/api/checkUser.php?code=" + userIds + "'"; // Replace with your content
+            $("#qrcode"+number).qrcode({
+                width: 150,
+                height: 150,
+                text: qrcodeData
+            });
 
-            document.getElementById('sourceImage' + imgIds).onload = function () {
+            number++;
 
-                // Get the image element
-                const img = document.getElementById('sourceImage' + imgIds);
-
-                // Create a canvas and set its size
-                const canvas = document.getElementById('canvasImg' + imgIds);
-                canvas.width = img.width;
-                canvas.height = img.height;
-
-                // Draw the image onto the canvas
-                const ctx = canvas.getContext('2d');
-                ctx.drawImage(img, 0, 0);
-
-                // Convert canvas to JPG
-                const jpgDataUrl = canvas.toDataURL('image/jpeg');
-
-            };
         });
+
+
     });
 </script>
 
