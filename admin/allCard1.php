@@ -11,6 +11,14 @@
     <script src="cards/card1/js/jquery.min.js"></script>
     <script src="cards/card1/js/bootstrap.min.js"></script>
     <script src="cards/card1/js/all.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@latest/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
 </head>
 
 <body>
@@ -21,11 +29,15 @@
 
     $enc = new CipherSecurity();
     $students = $fetch->getAssignedUser("DESC", "0", "500000", "`course`=" . $_POST['course-id']);
+    $number = 1;
+    $userIdArray = [];
 
     foreach ($students as $row) {
         $users = $fetch->oneUser($row['student']);
         $user = $users[0];
-    ?>
+        array_push($userIdArray,  $user["id"] );
+
+        ?>
 
         <br />
         <br />
@@ -55,7 +67,8 @@
 
                 <div class="justify-content-center">
                     <div class="card-qrcode img-border d-flex justify-content-center sp-mt-3 mb-2">
-                        <img class="qr-img w-100 h-100" src=<?php echo "https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://hozor.nasraa.ir/api/checkUser.php?code='" . $user["id"] . "'&choe=UTF-8"; ?> title="welcome" />
+<!--                        <img class="qr-img w-100 h-100" src=--><?php //echo "https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://hozor.nasraa.ir/api/checkUser.php?code='" . $user["id"] . "'&choe=UTF-8"; ?><!-- title="welcome" />-->
+                        <div id="qrcode<?php echo $number ?>"></div>
                     </div>
                     <span class="d-flex justify-content-center sp-title-color-2"> این کارت را هنگام حضور به همراه داشته
                         باشید</span>
@@ -71,10 +84,34 @@
         </style>
 
         <div class="bottom-three"></div> -->
-    <?php } ?>
+    <?php $number++;} ?>
 
 
+    <script>
+        $(document).ready(function () {
 
+            var jsArray = <?php echo json_encode($userIdArray); ?>;
+            var number = 1;
+
+            jsArray.forEach(userIds => {
+
+                console.log(userIds)
+
+
+                var qrcodeData = "https://hozor.nasraa.ir/api/checkUser.php?code=" + userIds + "'"; // Replace with your content
+                $("#qrcode"+number).qrcode({
+                    width: 120,
+                    height: 120,
+                    text: qrcodeData
+                });
+
+                number++;
+
+            });
+
+
+        });
+    </script>
 
 </body>
 
